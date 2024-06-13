@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background-image: url("images/background-img.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    /* jo bhi bada hoga us hisab se adjust karega */
+    background-repeat: no-repeat;
+    height: 650px;
+    position: relative;
+}
+
+.main .box {
+    height: 650px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.70;
+    /*make bg-color darker */
+    top: 0;
+    position: absolute;
+}
+
+nav {
+    max-width: 92vw;
+    margin: auto;
+    /* align content in center */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+nav img {
+    width: 16vw;
+    color: red;
+    position: relative;
+    z-index: 1;
+    padding-top: 15%;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    /*calc() function are use for calculate operation means 100%-100px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero :first-child {
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+}
+
+.hero :nth-child(2) {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.hero :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 10px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.forward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    bottom: 28%;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(10, 10, 10, 0.2);
+    ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 30px;
+    width: 80px;
+
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 3px 24px;
+    margin-left: 10%;
+    font-size: 4vh;
+    border-radius: 6px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 18vw;
+    padding: 25px;
+}
+
+
+.loginBox {
+    height: 40px;
+    width: 30vw;
+    margin-right: 20px;
+    background-color: rgba(10, 10, 10, 0.5);
+    /* the last one is opacity */
+    font-size: 20px;
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.image1 {
+    position: relative;
+}
+
+.image1 img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.image1 video {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 7%;
+    height: 30vh;
+    width: 30vw;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.image2 img {
+    width: 38vw;
+}
+
+.second>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.second>div :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.third>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.third>div :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.third {
+    position: relative;
+}
+
+.image3 img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.image3 video {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 59.5%;
+    height: 40vh;
+    width: 22.2vw;
+}
+
+.forth {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.image4 img {
+    width: 38vw;
+}
+
+.forth>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.forth>div :nth-child(2) {
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+}
+
+.faq {
+    color: white;
+    background-color: black;
+}
+
+.faq h2 {
+    text-align: center;
+    padding: 34px;
+    font-size: 48px;
+}
+
+.faqbox {
+    display: flex;
+    background-color: gray;
+    padding: 25px;
+    max-width: 76vw;
+    margin: auto;
+    font-size: x-large;
+    font-weight: 500;
+    background-color: rgba(200, 200, 200, 0.2);
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width : 1200px){
+
+    /* Write a css file for that size */
+
+}
