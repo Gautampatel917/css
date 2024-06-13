@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    border: 1px solid black;
+    height: 6vh;
+    width: 99vw;
+    background-color: purple;
+    position: sticky;
+    top: 1px;
+    z-index: 100; /*z-index are use for give priority. */
+}
+
+.Nmenu{
+    list-style: none;
+    text-decoration: none;
+}
+
+.Nmenu > li {
+    display: inline-block;
+    margin: 3px 50px;
+    padding: 4px;
+}
+
+.Nmenu a{
+    color: white;
+    text-decoration: none;
+}
+
+.heroSection{
+    border: 2px solid black;
+    height: 90vh;
+    width: 99vw;
+    margin: 4px;
+    background-color: beige;
+}
+
+.box1{
+    height: 70%;
+    width: 40%;
+    float: left;
+    background-color: olive;
+    position: relative;
+    margin-top: 50px;
+}
+
+.box2{
+    height: 70%;
+    width: 40%;
+    float: right;
+    background-color: olive;
+    position: relative;
+    margin-top: 50px;
+}
+
+footer{
+    border: 2px solid black;
+    height:  8vh;
+    width: 99vw;
+    background-color: darksalmon;
+    text-align: center;
+}

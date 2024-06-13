@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floatAndClear</title>
+    <style>
+        img{
+            float: left; /*float allow to side content*/
+            display: flow-root;  /*overcome  the floating issue by making it a containing block for  its contents */
+            margin: 5px; /*margin is used for space between the elements */
+        }
+
+        div{
+            border: 2px solid red;
+            /* clear: both; clear property are used for restrict float */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="CSS/blob.jpg" alt="404">
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, molestias praesentium nisi similique
+        soluta autem provident blanditiis minima accusantium. Nemo ex sunt, distinctio illo qui ipsa eius rerum hic
+        magnam.</div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, molestias praesentium nisi similique
+        soluta
+        autem provident blanditiis minima accusantium. Nemo ex sunt, distinctio illo qui ipsa eius rerum hic magnam.
+    </div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, molestias praesentium nisi similique
+        soluta
+        autem provident blanditiis minima accusantium. Nemo ex sunt, distinctio illo qui ipsa eius rerum hic magnam.
+    </div>
+</body>
+
+</html>

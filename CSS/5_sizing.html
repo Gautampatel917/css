@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            /* html also known as root element */
+            font-size: 12px;
+        }
+
+        .demo {
+            
+            border: 2px solid black;
+            height: 300px;
+            /* width: 300px; */
+           /* px : depend on device resolution*/
+            width: 40vm;
+            /* viewport : 40% of viewport width*/
+            margin: auto;
+            /*that use in vm and responsive property*/
+            background-color: gray;
+            font-size: 15px;
+        }
+
+        .demo p {
+            font-size: 2em; /* twice of parents font size */
+            font-size: 2rem; /*twice of root element (default) */
+
+            /* vmin : which are minimum example : in mobile hight > width but in computer monitor width > hight
+                      so vmin automatic convert vh and vw depend on your device */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- sizing : px, rem, em and % -->
+    <div class="demo">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit tenetur voluptatem illo eius
+            necessitatibus voluptas asperiores, animi itaque commodi est quisquam pariatur sint deleniti alias quos
+            nesciunt nihil? Eos?
+        </p>
+    </div>
+</body>
+
+</html>

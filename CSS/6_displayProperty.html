@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displayProperty</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+
+            /* outline : Use for create a navigation hover effect outline it's line border there not include in boxModel */
+
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            background-color: maroon;
+            display: inline; 
+            /* display: flex; aline element... */
+            display: inline-block; /*give margin from all */
+            margin: 10px;
+            /* display: none; this property are use for hide element even there spaces */
+            /* visibility: hidden; there are also use for hide the element but there not remove space of element */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello i am the box
+    </div>
+    <div class="box">
+        hello i am also a box
+    </div>
+</body>
+</html>

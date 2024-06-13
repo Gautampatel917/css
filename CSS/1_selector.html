@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* select by tag name */
+        body{
+            background-color: aqua;
+        }
+
+        /* select by class name */
+        .myDiv{
+            background-color: burlywood;
+        }
+
+        /* select by id name */
+        #myDiv{
+            background-color: purple;
+        }
+
+        /* select by child name */
+        div > p {
+            color: orange;
+        }
+
+        /* Decenter selector : if you target subChild of the tag*/
+        div p{
+            color: red;
+        }
+
+        /* Universal selector */
+        *{
+            margin: auto;
+            padding: auto;
+        }
+
+        /* Pseudo selector */
+        a:visited{
+            color: red;
+        }
+        
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: darksalmon;
+            /* when you clicked */
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myDiv">
+        <p>this is paragraph</p>
+    </div><br>
+    <div id="myDiv">
+        <article>
+            <p>This is a paragraph.</p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com/">google.com</a>
+</body>
+</html>

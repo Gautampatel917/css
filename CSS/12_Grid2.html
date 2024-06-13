@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            height: 40vh;
+            width: 80vw; 
+            display: grid;
+            /* grid-template-columns: 200px 100px 120px; */
+            grid-template-rows: 1fr 1fr 1fr;
+            /****same work like****/
+            /* grid-template-rows: repeat(3, 1fr); */
+            
+            grid-gap: 5px;
+            grid-template-columns: 1fr 2fr 1fr;
+            
+            grid-auto-rows: minmax(100px, auto);
+            grid-auto-columns: minmax(100px, auto);
+
+            /* minimum size of content but there increase size according to the page*/
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        }
+
+        .item{
+            /* height: 33px;
+            width: 40px;
+            background-color: lightseagreen; */
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .item-1{
+            grid-row-start: 1;
+            grid-row-end: 4;    /*we can adjust layout by this property */
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid are use for 2d layout -->
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

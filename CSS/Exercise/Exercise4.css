@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 70vh;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.circle {
+    height: 15vh;
+    width: 10vw;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: bouse 7s linear infinite forwards;
+}
+
+@keyframes bouse {
+    0%{
+        transform: none;
+    }
+    10%{
+        transform: translate(100%, -80%);
+    }
+    20% {
+        transform: translate(200%, 0%);
+    }
+    30%{
+        transform: translate(300%, -80%);
+    }
+    40%{
+        transform: translate(400%, 0%);
+    }
+    50%{
+        transform: translate(500%, -80%);
+    }
+    60%{
+        transform: translate(600%, 0%);
+    }
+    70%{
+        transform: translate(700%,-80%);
+    }
+    80%{
+        transform: translate(800%, 0%);
+    }
+    90%{
+        transform: translate(900%,-80%);
+    }
+    100%{
+        transform: translate(900%,0%);
+    }
+}

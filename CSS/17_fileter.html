@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vh;
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+
+        .container img{
+            height: 50vh;
+            width: 57vw;
+            object-fit: cover;
+            /* filter: invert(.2); --> remove all colors*/
+            /* filter: opacity(0.2); --> give transition*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="background-img.jpg" alt="Not-found">
+    </div>
+</body>
+</html>

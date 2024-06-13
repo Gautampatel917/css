@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontAndTextColor</title>
+    
+    <!-- And also use a link just line attach any file to html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+    <style>
+        /* We can also use google font services by import method(if you downloaded on your system.) */
+        /* @import url(""); */
+        p{
+            font-family: "Baloo Bhaijaan 2", sans-serif;
+            font-size: larger;
+            /* font-style: italic; */
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: blue; /* there are use in navigation bar when you hover */
+            text-decoration-thickness: 7px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        /* Note :
+                font : About the style and shape
+                text : There treat like content/element that's why there have text-align property.
+        */
+
+        .color{
+            color: red; /* font color */
+            color: rgb(100, 255, 200);
+            color: #ff00ff;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>This is font family example.</p>
+    <p class="color">This is color example</p>
+</body>
+</html>
